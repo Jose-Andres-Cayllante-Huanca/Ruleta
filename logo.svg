@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+  <title id="title">Spin the Wheel</title>
+  <desc id="desc">Logotipo con letras blancas delineadas en negro y la palabra the en amarillo anaranjado.</desc>
+  <g font-family="'Arial Black', 'DejaVu Sans', Arial, sans-serif" font-weight="900" paint-order="stroke fill" stroke="#080808" stroke-linejoin="round">
+    <text x="22" y="222" font-size="205" textLength="465" lengthAdjust="spacingAndGlyphs" fill="#fff" stroke-width="5">Spin</text>
+    <text x="505" y="222" font-size="205" textLength="665" lengthAdjust="spacingAndGlyphs" fill="#fff" stroke-width="5">Wheel</text>
+    <text x="430" y="177" font-size="83" textLength="92" lengthAdjust="spacingAndGlyphs" fill="#ffb51b" stroke-width="4">the</text>
+  </g>
+</svg>

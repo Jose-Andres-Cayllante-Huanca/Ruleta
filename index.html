@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ruleta aleatoria</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top">
+  <button class="burger" id="burger" aria-label="Menú">☰</button>
+  <!-- LOGO: pega aquí tu SVG dentro de .logo (ajusta tamaño en styles.css: --logo-w / --logo-h) -->
+<a class="logo" href="#"><img src="logo.svg" alt="Logo"></a>  <nav class="menu" id="menu">
+  <nav class="menu" id="menu">
+    <a href="#" id="m-new">Nuevo</a>
+    <a href="#" id="m-save">💾 Guardar</a>
+    <a href="#" id="m-design">Diseño de la página</a>
+    <a href="#" id="m-title">H Añadir título</a>
+    <a href="#" id="m-share">Compartir</a>
+    <a href="#" id="m-lib">Biblioteca</a>
+    <a href="#" id="m-full">⛶</a>
+    <a href="#" class="mine" id="m-mine">Mis ruedas</a>
+  </nav>
+</header>
+
+<main class="app">
+  <section class="stage" id="stage">
+    <h1 id="title" hidden></h1>
+    <div class="wheel-box" id="wheelBox">
+      <canvas id="wheel"></canvas>
+      <div class="pointer"></div>
+      <div class="hint" id="hint">Toque para girar la rueda</div>
+    </div>
+  </section>
+
+  <section class="panel">
+    <div class="tabs">
+      <button class="tab on" data-tab="entries" aria-label="Entradas">✎</button>
+      <button class="tab" data-tab="results" aria-label="Resultados">☑<span class="badge" id="badge" hidden></span></button>
+      <button class="tab" data-tab="hide" aria-label="Ocultar">🚫</button>
+      <span class="tabs-end"><button class="plain" id="add" aria-label="Añadir">＋</button><button class="plain" id="palette" aria-label="Colores">🎨</button></span>
+    </div>
+    <div class="tools">
+      <button class="tool" id="shuffle" aria-label="Mezclar">⤮</button>
+      <button class="tool" id="sort" aria-label="Ordenar">A↓Z</button>
+      <span class="grow"></span>
+      <button class="tool" id="settings" aria-label="Ajustes">⚙</button>
+      <span class="grow"></span>
+      <button class="tool" id="img" aria-label="Imagen">🖼</button>
+      <button class="tool" id="save" aria-label="Guardar">💾</button>
+    </div>
+
+    <div id="pane-entries">
+      <div class="ta-wrap">
+        <textarea id="entries" spellcheck="false" placeholder="Escriba o pegue sus entradas"></textarea>
+        <span class="emoji">☺</span>
+      </div>
+      <div class="count"><span id="count">Entradas: 0</span></div>
+    </div>
+    <ol id="pane-results" class="results" hidden></ol>
+    <p id="pane-hide" class="hidden-note" hidden>Entradas ocultas. Toca otra pestaña para verlas.</p>
+
+    <div class="ad-box" id="adBox">
+      <button class="ad-x" id="adX" aria-label="Cerrar anuncio">✕</button>
+      <!-- ANUNCIO CUADRADO: coloca aquí tu código de anuncios (ej. AdSense) -->
+      <div class="ad-slot ad-rect">Espacio publicitario 300×250</div>
+    </div>
+
+    <article class="about">
+      <b>Ruleta aleatoria</b> es una ruleta online y una herramienta de selección al azar gratuita que te permite crear, guardar y girar una o varias ruletas personalizadas en una misma página. Añade tus propias entradas, aplica temas y compártela.
+    </article>
+  </section>
+</main>
+
+<!-- ANUNCIO FIJO INFERIOR (móvil): coloca aquí tu código de anuncios -->
+<aside class="ad-bottom" id="adBottom">
+  <div class="ad-slot ad-banner">
+    <div class="ad-title">Espacio publicitario</div>
+    <div class="ad-text">Texto del anuncio de ejemplo para tu anunciante.</div>
+    <div class="ad-row"><span>anunciante.com</span><button class="ad-open">Abrir ›</button></div>
+  </div>
+</aside>
+
+<div class="modal" id="modal"><div class="box" id="box"></div></div>
+<script src="app.js"></script>
+</body>
+</html>
